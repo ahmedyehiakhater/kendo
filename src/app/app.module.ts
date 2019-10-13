@@ -3,6 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
+import { NominationsModule } from './nominations/nominations.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -10,7 +19,12 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
+    NominationsModule,
+    BrowserAnimationsModule,
+    InputsModule,
+    DateInputsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
